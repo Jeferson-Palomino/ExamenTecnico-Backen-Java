@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://KafkaDevs_owner:endpoint=ep-old-wave-a5w2rdl5$HEPx2Yiw6CuB@ep-old-wave-a5w2rdl5.us-east-2.aws.neon.tech/BaseDatos?sslmode=require
+    pool:
+      enabled: true
+      initial-size: 5
+      max-size: 20
+
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
